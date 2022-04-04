@@ -19,12 +19,12 @@ provider "snowflake" {
 }
 
 resource "snowflake_database" "demo_db" {
-  name    = "DEMO_DB"
+  name    = "DEMO_DB-TEST"
   comment = "Database for Snowflake Terraform demo"
 }
 
 resource "snowflake_warehouse" "warehouse" {
-  name           = "TF_DEMO"
+  name           = "TF_DEMO-TEST"
   warehouse_size = "large"
   auto_suspend = 60
 }
