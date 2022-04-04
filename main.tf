@@ -2,7 +2,7 @@ terraform {
   required_providers {
     snowflake = {
       source  = "chanzuckerberg/snowflake"
-      version = "0.25.17"
+      version = "0.30.0"
     }
   }
 
@@ -19,6 +19,6 @@ provider "snowflake" {
 }
 
 resource "snowflake_database" "demo_db" {
-  name    = "DEMO_DB"
+  name    = "ACCOUNTADMIN"
   comment = "Database for Snowflake Terraform demo"
 }
