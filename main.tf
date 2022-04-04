@@ -19,6 +19,6 @@ provider "snowflake" {
 }
 
 resource "snowflake_database" "demo_db" {
-  name    = "ACCOUNTADMIN"
+  name    = "KRYUMA"
   comment = "Database for Snowflake Terraform demo"
 }
