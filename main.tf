@@ -22,3 +22,9 @@ resource "snowflake_database" "demo_db" {
   name    = "DEMO_DB"
   comment = "Database for Snowflake Terraform demo"
 }
+
+resource "snowflake_warehouse" "warehouse" {
+  name           = "TF_DEMO"
+  warehouse_size = "large"
+  auto_suspend = 60
+}
